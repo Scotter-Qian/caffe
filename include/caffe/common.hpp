@@ -175,7 +175,7 @@ class Caffe {
   shared_ptr<RNG> random_generator_;
 
   Brew mode_;
-
+  // static boost::shared_ptr<Caffe> thread_instance_;
   // Parallel training
   int solver_count_;
   int solver_rank_;

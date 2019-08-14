@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 SOURCE_DIR=`pwd`
-BUILD_DIR=./my_build
+BUILD_DIR=./build
 
 rm ${BUILD_DIR} -rf
 
