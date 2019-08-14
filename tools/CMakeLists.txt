@@ -13,11 +13,11 @@ foreach(source ${srcs})
   # target
   add_executable(${name} ${source})
   target_link_libraries(${name} ${Caffe_LINK})
-  caffe_default_properties(${name})
+  #caffe_default_properties(${name})
 
   # set back RUNTIME_OUTPUT_DIRECTORY
-  caffe_set_runtime_directory(${name} "${PROJECT_BINARY_DIR}/tools")
-  caffe_set_solution_folder(${name} tools)
+  #caffe_set_runtime_directory(${name} "${PROJECT_BINARY_DIR}/tools")
+  #caffe_set_solution_folder(${name} tools)
 
   # restore output name without suffix
   if(name MATCHES "caffe.bin")
@@ -25,6 +25,6 @@ foreach(source ${srcs})
   endif()
 
   # Install
-  install(TARGETS ${name} DESTINATION ${CMAKE_INSTALL_BINDIR})
+  #install(TARGETS ${name} DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 endforeach(source)
