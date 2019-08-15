@@ -95,7 +95,7 @@ add_subdirectory(tools)
 add_subdirectory(examples)
 #add_subdirectory(python)
 #add_subdirectory(matlab)
-add_subdirectory(docs)
+#add_subdirectory(docs)
 add_subdirectory(test)
 
 # ---[ Linter target
